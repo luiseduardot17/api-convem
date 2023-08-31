@@ -6,7 +6,7 @@ function validarResposta(resposta) {
         if (resposta.toLowerCase() === "sim") {
             return mensagemModel.getMensagem();
         } else {
-            throw new Error("Resposta inválida. A resposta deve ser 'sim'.");
+            throw new Error("Erro");
         }
     } catch (error) {
         return error.message;
